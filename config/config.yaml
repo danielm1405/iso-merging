@@ -1,0 +1,38 @@
+# @package _global_
+defaults:
+- _self_
+- method: sum
+
+model: ViT-B-16
+num_tasks: 8
+specify_lambda: None
+
+DATASETS: ''
+DATASETS_VAL: ''
+
+# utilities
+cache_dir: None
+world_size: 1
+port: 12355
+device: "cuda"
+batch_size: 32
+data_location: "datasets"
+model_location: "models/ckpts"
+masks_location: "models/masks"
+save_subfolder: ""
+
+n_eval_points: 31
+early_stopping: true
+early_stopping_patience: 3
+
+wandb:
+  project: iso-merging
+  mode: online
+  group: ${model}
+
+hydra:
+  run:
+    dir: ./logs/${model}/${method.name}/${now:%Y-%m-%d}/${now:%H-%M-%S}
+  sweep:
+    dir: ./logs/multirun/${now:%Y-%m-%d}/${now:%H-%M-%S}
+    subdir: ${hydra.job.num}
