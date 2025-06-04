@@ -1,6 +1,12 @@
 # No Task Left Behind: Isotropic Model Merging with Common and Task-Specific Subspaces
 [![arXiv](https://img.shields.io/badge/arXiv-2502.04959-b31b1b.svg?style=flat)](https://arxiv.org/abs/2502.04959)
 
+This is the official repository for the paper:
+
+> **[No Task Left Behind: Isotropic Model Merging with Common and Task-Specific Subspaces](https://arxiv.org/abs/2502.04959)**<br>
+> [Daniel Marczak](https://scholar.google.com/citations?user=Vs4kBzQAAAAJ&hl=en), [Simone Magistri](https://scholar.google.com/citations?user=fAS993EAAAAJ&hl=en), [Sebastian Cygert](https://scholar.google.com/citations?hl=en&user=wLH9PP8AAAAJ), [Bartłomiej Twardowski](https://scholar.google.com/citations?hl=en&user=8yywECgAAAAJ), [Andrew D. Bagdanov](https://scholar.google.com/citations?user=_Fk4YUcAAAAJ&hl=en&oi=ao), [Joost van de Weijer](https://scholar.google.com/citations?hl=en&user=Gsw2iUEAAAAJ) <br>
+> ICML 2025
+
 <div align="left"><img src="fig/teaser.png" width="100%" alt="schema"></div>
 
 > Spectrum of singular values for a single layer weight update matrix obtained by merging using Task Arithmetic (top) compared to our approaches: Iso-C (middle) and Iso-CTS (bottom). Task Arithmetic sums the task-specific matrices, which result in a spectrum with a few dominant components. Iso-C instead replaces this spectrum with a uniform one, which results in significant performance improvement. Iso-CTS enhances the common subspace with task-specific subspaces and yields state-of-the-art model merging performance.
