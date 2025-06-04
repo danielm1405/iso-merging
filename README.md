@@ -53,11 +53,11 @@ python main.py method="iso_cts" model=${model} num_tasks=${num_tasks} method.com
 ## 📚 Reference
 If you find this code useful, please cite the following paper:
 ```bibtex
-@article{marczak2025notaskleftbehind,
-  title   = {{N}o {T}ask {L}eft {B}ehind: {I}sotropic {M}odel {M}erging with {C}ommon and {T}ask-{S}pecific {S}ubspaces},
-  author  = {Daniel Marczak and Simone Magistri and Sebastian Cygert and Bartłomiej Twardowski and Andrew D. Bagdanov and Joost van de Weijer},
-  year    = {2025},
-  journal = {arXiv preprint arXiv: 2502.04959}
+@inproceedings{marczak2025notaskleftbehind,
+  title     = {{N}o {T}ask {L}eft {B}ehind: {I}sotropic {M}odel {M}erging with {C}ommon and {T}ask-{S}pecific {S}ubspaces},
+  author    = {Daniel Marczak and Simone Magistri and Sebastian Cygert and Bartłomiej Twardowski and Andrew D. Bagdanov and Joost van de Weijer},
+  year      = {2025},
+  booktitle = {International Conference on Machine Learning},
 }
 ```
 
